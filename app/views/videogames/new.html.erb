@@ -1,1 +1,16 @@
 <h1>New</h1>
+
+
+<%= form_for @videogame do |f| %>
+
+    <%= f.label :name, "Enter a name"%>
+    <%= f.text_field :name %>
+
+    <%= f.label :description, "Wich description?"%>
+    <%= f.text_field :description %>
+
+    <%= f.label :price, "How much?"%>
+    <%= f.number_field :price %>
+
+    <%= f.submit %>
+<%end%>
