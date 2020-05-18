@@ -10,12 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-
 ActiveRecord::Schema.define(version: 2020_05_18_134946) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
-
 
   create_table "bookings", force: :cascade do |t|
     t.boolean "accepted"
@@ -63,5 +61,4 @@ ActiveRecord::Schema.define(version: 2020_05_18_134946) do
   add_foreign_key "bookings", "videogames"
   add_foreign_key "reviews", "bookings"
   add_foreign_key "videogames", "users"
-
 end
