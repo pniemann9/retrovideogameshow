@@ -9,13 +9,13 @@ require 'faker'
 
 puts 'Creating 20 fake User and 20 fake videogames...'
 
-20.times do 
-    user = User.new(email: Faker::Internet.email, password: Faker::Internet.password)
+20.times do
+    user = User.new(email: Faker::Internet.email, password: Faker::Internet.password, first_name: Faker::Name.first_name, last_name: Faker::Name.last_name)
     user.save!
 end
 
 i = 1
-while i < 20 do 
+while i < 20 do
     videogame = Videogame.new(name: Faker::Company.name, description: "Ceci est une description", price: rand(5..50), user_id: i)
     videogame.save!
     i += 1
