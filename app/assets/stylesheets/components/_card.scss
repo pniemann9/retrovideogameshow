@@ -1,0 +1,58 @@
+.container {
+    margin: 0 auto;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+    padding: 16px;
+    flex-grow: 1;
+  }
+  
+  
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+.card h2 {
+    font-size: 1rem;
+}
+
+.card-game {
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.top-img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-game-infos {
+    padding: 15px 15px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: relative;
+}
+
+.card-game h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap !important;
+    overflow: hidden;
+    width: 200px !important;
+
+}
+
+.card-game p {
+    font-size: 12px;
+    opacity: .7;
+    margin: 0;
+}
+  
