@@ -14,7 +14,6 @@ class VideogamesController < ApplicationController
 
     def create
         videogame = Videogame.create(videogame_params)
-        redirect_to videogame_path(videogame)
     end
 
     def edit
@@ -37,6 +36,6 @@ class VideogamesController < ApplicationController
     end
 
     def set_videogame
-        @Videogame = Videogame.find(params[:id])
+        @videogame = Videogame.find(params[:id])
     end
 end
