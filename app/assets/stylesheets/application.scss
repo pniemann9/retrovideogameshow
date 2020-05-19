@@ -1,4 +1,12 @@
 /* app/assets/stylesheets/application.scss */
-@import "bootstrap/scss/bootstrap"; /* picks it up in node_modules! */
 @import "components/_navbar";
 @import "components/_banner";
+// External libraries
+@import "bootstrap/scss/bootstrap"; // from the node_modules
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+// Your CSS partials
+@import "components/index";
+
+// Graphical variables

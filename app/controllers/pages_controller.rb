@@ -1,5 +1,7 @@
 class PagesController < ApplicationController
   def index
-    @videogame = Videogame.all
+
+    @users = User.all
+
   end
 end
