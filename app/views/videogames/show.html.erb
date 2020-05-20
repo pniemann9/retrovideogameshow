@@ -1,12 +1,12 @@
   <div class="card-trip">
-    <img src="" />
+    <img src="<%=@videogame.image%>">
     <div class="card-trip-infos">
       <div>
         <h2><%= @videogame.name %></h2>
         <p><%= @videogame.description %></p>
       </div>
       <h2 class="card-trip-pricing"><%= @videogame.price %>€</h2>
-      <img src="user.avatar" class="card-trip-user avatar-bordered" />
+      <img src="<%=@user.avatar%>" class="card-trip-user avatar-bordered">
     </div>
   </div>
   <div class="btn btn-primary mt-5">Book now !
