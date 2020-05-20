@@ -22,3 +22,11 @@
 .navbar-lewagon .navbar-brand img {
   width: 40px;
 }
+
+.nav-link > a {
+  color: #595959;
+}
+
+.nav-link > a:hover {
+  color: grey;
+}
