@@ -4,7 +4,7 @@
       <% @videogames.each do |game| %>
       <div class="card">
         <div class="card-game">
-          <img class="top-img" src="http://kitt.lewagon.com/placeholder/cities/rio" alt="">
+          <img class="top-img" src="<%=game.image%>" alt="">
           <div class="card-game-infos">
             <div>
               <h2 class=""><%= game.name %></h2>
