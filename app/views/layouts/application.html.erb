@@ -11,19 +11,14 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   </head>
 
   <body>
     <%= render "shared/navbar" %>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
     <%= yield %>
-  </body>
-
-<!--     <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p> -->
-
-  <footer>
+     <footer>
     <div class="footer">
       <div class="footer-links">
         <a href="#"><i class="fab fa-github"></i></a>
@@ -39,4 +34,9 @@
       </div>
     </div>
   </footer>
+  </body>
+
+
+
+
 </html>

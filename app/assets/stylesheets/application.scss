@@ -1,8 +1,5 @@
 /* app/assets/stylesheets/application.scss */
 
-@import "components/_navbar";
-@import "components/_banner";
-@import "components/_card";
 
 // External libraries
 @import "bootstrap/scss/bootstrap"; // from the node_modules
@@ -11,7 +8,16 @@
 
 // Your CSS partials
 @import "components/index";
+@import "pages/index";
+
 
 // Graphical variables
 
+a:hover {
+  text-decoration: none;
+  color: white;
+}
 
+a {
+  color: white;
+}

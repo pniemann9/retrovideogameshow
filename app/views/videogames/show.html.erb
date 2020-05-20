@@ -1,9 +1,19 @@
-<h1>Show</h1>
-
-<h1><%= @videogame.name %></h1>
-<p><%= @videogame.description %></p>
-<p><%= @videogame.price %>$</p>
-<p><%= @user.first_name%></p>
-<img class="avatar" src="<%=@user.avatar%>" alt="">
-
-<%= link_to "back to list", videogames_path%>
+<div class="container">
+  <div class="card-trip">
+    <img src="" />
+    <div class="card-trip-infos">
+      <div>
+        <h2><%= @videogame.name %></h2>
+        <p><%= @videogame.description %></p>
+      </div>
+      <h2 class="card-trip-pricing"><%= @videogame.price %>€</h2>
+      <img src="user.avatar" class="card-trip-user avatar-bordered" />
+    </div>
+  </div>
+  <div class="btn btn-primary mt-5">Book now !
+  </div>
+<div class="flexbox">
+  <div class="btn btn-info mt-5">
+  <%= link_to "Back to list", videogames_path%>
+  </div>
+</div>
