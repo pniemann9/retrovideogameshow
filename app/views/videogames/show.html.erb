@@ -10,8 +10,22 @@
       <img src="user.avatar" class="card-trip-user avatar-bordered" />
     </div>
   </div>
-  <div class="btn btn-primary mt-5">Book now !
+
+<!--   <div class="btn btn-primary mt-5">Book now !
   </div>
+ -->
+
+  <%= simple_form_for [@videogame, Booking.new] do |f| %>
+
+      <%= f.input :start_time, as: :date %>
+
+      <%= f.input :end_time, as: :date %>
+
+      <%= f.submit %>
+  <%end%>
+
+
+
 <div class="flexbox">
   <div class="btn btn-info mt-5">
   <%= link_to "Back to list", videogames_path%>
