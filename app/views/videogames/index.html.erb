@@ -1,11 +1,24 @@
-<h1>Les Jeux</h1>
+<div class="container">
+  <h1>Les Jeux</h1>
+  <div class="cards">
+      <% @videogames.each do |game| %>
+      <div class="card">
+        <div class="card-game">
+          <img class="top-img" src="http://kitt.lewagon.com/placeholder/cities/rio" alt="">
+          <div class="card-game-infos">
+            <div>
+              <h2 class=""><%= game.name %></h2>
+              <p><%= game.description %></p>
+              <p><%= game.price %>$</p>  
+              </div>
+              <div>
+              <p><%= link_to "Aller voir", videogame_path(game) %> <%= link_to "Delete", videogame_path(game), method: :delete %></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <%end%>     
+  </div>
+</div>
+        
 
-<%= link_to "Add a new videogame", new_videogame_path %>
-
-<% @videogames.each do |game| %>
-    <h2><%= game.name %></h2>
-    <p><%= game.description %></p>
-    <p><%= game.price %>$</p>
-    <%= link_to "Aller voir", videogame_path(game) %>
-    <%= link_to "Delete", videogame_path(game), method: :delete %>
-<%end%>
