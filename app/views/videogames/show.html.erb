@@ -3,5 +3,7 @@
 <h1><%= @videogame.name %></h1>
 <p><%= @videogame.description %></p>
 <p><%= @videogame.price %>$</p>
+<p><%= @user.first_name%></p>
+<img class="avatar" src="<%=@user.avatar%>" alt="">
 
 <%= link_to "back to list", videogames_path%>
