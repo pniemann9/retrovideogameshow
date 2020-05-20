@@ -9,8 +9,8 @@
     padding: 16px;
     flex-grow: 1;
   }
-  
-  
+
+
 .card {
     display: flex;
     align-items: center;
@@ -47,12 +47,15 @@
     white-space: nowrap !important;
     overflow: hidden;
     width: 200px !important;
-
 }
+
 
 .card-game p {
     font-size: 12px;
     opacity: .7;
     margin: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap !important;
+    overflow: hidden;
+    width: 90px !important;
 }
-  

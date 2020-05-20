@@ -13,6 +13,7 @@
 
 // Graphical variables
 
+
 a:hover {
   text-decoration: none;
   color: white;
@@ -21,3 +22,8 @@ a:hover {
 a {
   color: white;
 }
+
+.content-wrapper {
+  min-height: calc(100vh - 70px - 80px - 58px);
+}
+

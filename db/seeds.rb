@@ -19,9 +19,8 @@ y = 50
 end
 
 i = 1
-
 while i <= 20
-  videogame = Videogame.new(name: Faker::Game.title, description: "#{Faker::Game.genre} #{Faker::Game.platform}", price: rand(5..50), user_id: i)
+  videogame = Videogame.new(name: Faker::Game.title, description: "#{Faker::Game.genre} #{Faker::Game.platform}", price: rand(5..50), user_id: i, image: "https://cdn03.nintendo-europe.com/media/images/10_share_images/games_15/nintendo_switch_4/H2x1_NSwitch_NewSuperMarioBrosUDeluxe_image1600w.jpg")
   videogame.save!
   i += 1
 end
