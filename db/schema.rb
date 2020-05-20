@@ -10,13 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+
 ActiveRecord::Schema.define(version: 2020_05_20_102230) do
+
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "bookings", force: :cascade do |t|
-    t.boolean "accepted"
+    t.boolean "accepted", default: false
     t.date "start_time"
     t.date "end_time"
     t.bigint "user_id", null: false

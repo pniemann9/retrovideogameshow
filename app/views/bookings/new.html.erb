@@ -1,0 +1,19 @@
+<h1>Bookings#new</h1>
+<p>Find me in app/views/bookings/new.html.erb</p>
+
+
+<%= simple_form_for @booking do |f| %>
+
+    <%= f.label :accepted, "Would you like to book this game ?"%>
+    <%= f.boolean :accepted %>
+
+    <%= f.label :start_time, "Start time"%>
+    <%= f.date :start_time %>
+
+    <%= f.label :end_time, "End time"%>
+    <%= f.date :end_time %>
+
+    <%= f.submit %>
+<%end%>
+
+

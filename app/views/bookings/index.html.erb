@@ -1,0 +1,10 @@
+<h1>Liste des réservations </h1>
+
+<% @bookings.each do |booking| %>
+ <p> <%= booking.accepted %> </p>
+ <p> <%= booking.start_time %> </p>
+ <p> <%= booking.end_time %> </p>
+ <% end %>
+
+
+
