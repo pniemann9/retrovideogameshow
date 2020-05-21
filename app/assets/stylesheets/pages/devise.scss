@@ -1,0 +1,21 @@
+.devisecontainer {
+  margin: 0px 300px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+.flexbox {
+  text-align: center;
+}
+
+.form-inputs {
+  width: 100%;
+}
+
+#user_email {
+  margin-left: 50px;
+}
+
+#user_password {
+  margin-left: 20px;
+}

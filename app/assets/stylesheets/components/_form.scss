@@ -1,10 +1,21 @@
-.container-card {
+.container-form {
+  // background-color: yellow;
   display: flex;
   flex-direction: row;
-  // background-color: yellow;
   width: 100%;
-  //height: calc(100vh - 150px);
+  height: 500px;
   padding: 100px 200px 100px 200px;
+}
+
+.form-card {
+  // background-color: pink; ici mettre un effet ombre
+  box-shadow: 0 2px 2px rgba(0.3,0.3,0.3,0.3);
+  display: flex;
+  width: 20%;
+  height: 100%;
+  min-width: 300px;
+  border-radius: 10px;
+  margin-left: 30px;
 }
 
 .form-card-content {
@@ -13,28 +24,22 @@
   padding: 20px;
 }
 
-.product-card {
-  display: flex;
-  // background-color: orange;
-  width: 80%;
-  height: 100%;
-  margin-right: 50px;
-  min-width: 300px;
-  max-width: 900px;
-  border-radius: 10px;
-}
+// .product-card {
+//   // background-color: orange;
+//   display: flex;
+//   width: 80%;
+//   height: 100%;
+//   margin-right: 50px;
+//   min-width: 300px;
+//   max-width: 900px;
+//   border-radius: 10px;
+// }
 
-.form-card {
-  display: flex;
-  // background-color: pink;
-  width: 20%;
-  height: 100%;
-  min-width: 300px;
-  border-radius: 10px;
-}
-
-.card-image {
-  background-size: 100%;
-  background-position: center;
-}
+// .card-image {
+//   background-size: 100%;
+//   background-position: center;
+//   height: 200px;
+//   width: 100%;
+//   object-fit: cover;
+// }
 

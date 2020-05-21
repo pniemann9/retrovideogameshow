@@ -1,4 +1,4 @@
-<div class="container-card">
+<div class="container-form">
 
   <div class="card">
     <div class="card-game">
@@ -39,11 +39,19 @@
           </div>
         </div>
       </div>
+  </div> -->
 
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
+  <div class="form-card">
+    <div class="form-card-content">
+      <h2>Réservation</h2>
+       <div class="simple_form form-row" style="width: 300px; margin: 0 auto;">
+        <h6>Je souhaite réserver ce jeu du :</h6>
+          <%= simple_form_for [@videogame, Booking.new] do |f| %>
+          <%= f.input :start_time, as: :string, input_html:{id: "range_start"} %>
+          <%= f.input :end_time, as: :string, input_html:{id: "range_end"} %>
+          <%= f.button :submit, "Réservez", class:"btn-primary" %>
+        <%end%>
+       </div>
     </div>
   </div>
 </div>
