@@ -1,23 +1,62 @@
 <h2>Réservations en cours !</h2>
 
-  <% @currentbookings.each do |booking| %>
-  <p> <%= booking.accepted %> </p>
-  <p> <%= booking.start_time %> </p>
-  <p> <%= booking.end_time %> </p>
- <% end %>
+<div class="cards">
+    <% @currentbookings.each do |booking| %>
+      <div class="card">
+        <div class="card-game">
+          <img class="top-img" src="<%=booking.videogame.image%>" alt="">
+          <div class="card-game-infos">
+            <div>
+              <h2 class=""><%= booking.videogame.name %></h2>
+              <p><%= booking.start_time %></p>
+              <p><%= booking.end_time %></p>
+              </div>
+              <div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <%end%>
+</div>
 
 <h2> Réservations futures !</h2>
 
-  <% @futurebookings.each do |booking| %>
-  <p> <%= booking.accepted %> </p>
-  <p> <%= booking.start_time %> </p>
-  <p> <%= booking.end_time %> </p>
- <% end %>
+<div class="cards">
+    <% @futurebookings.each do |booking| %>
+      <div class="card">
+        <div class="card-game">
+          <img class="top-img" src="<%=booking.videogame.image%>" alt="">
+          <div class="card-game-infos">
+            <div>
+              <h2 class=""><%= booking.videogame.name %></h2>
+              <p><%= booking.start_time %></p>
+              <p><%= booking.end_time %></p>
+              </div>
+              <div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <%end%>
+</div>
 
 <h2>Réservations passées</h2>
 
-  <% @pastbookings.each do |booking| %>
-  <p> <%= booking.accepted %> </p>
-  <p> <%= booking.start_time %> </p>
-  <p> <%= booking.end_time %> </p>
- <% end %>
+<div class="cards">
+    <% @pastbookings.each do |booking| %>
+      <div class="card">
+        <div class="card-game">
+          <img class="top-img" src="<%=booking.videogame.image%>" alt="">
+          <div class="card-game-infos">
+            <div>
+              <h2 class=""><%= booking.videogame.name %></h2>
+              <p><%= booking.start_time %></p>
+              <p><%= booking.end_time %></p>
+              </div>
+              <div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <%end%>
+</div>
