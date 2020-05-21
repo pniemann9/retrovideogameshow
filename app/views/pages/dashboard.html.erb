@@ -1,62 +1,12 @@
-<h2>Réservations en cours !</h2>
+<h1><%= current_user.first_name.capitalize %>'s dashboard ^-^</h1>
 
-<div class="cards">
-    <% @currentbookings.each do |booking| %>
-      <div class="card">
-        <div class="card-game">
-          <img class="top-img" src="<%=booking.videogame.image%>" alt="">
-          <div class="card-game-infos">
-            <div>
-              <h2 class=""><%= booking.videogame.name %></h2>
-              <p><%= booking.start_time %></p>
-              <p><%= booking.end_time %></p>
-              </div>
-              <div>
-            </div>
+  <div class="notifications">
+        <% @sorted.each do |booking| %>
+        <div class="notification">
+          <img src='<%=booking.videogame.image%>' class="avatar-notification"/>
+          <div class="notification-content">
+            <p>You booked <%= booking.videogame.name %></p>
           </div>
         </div>
-      </div>
-    <%end%>
-</div>
-
-<h2> Réservations futures !</h2>
-
-<div class="cards">
-    <% @futurebookings.each do |booking| %>
-      <div class="card">
-        <div class="card-game">
-          <img class="top-img" src="<%=booking.videogame.image%>" alt="">
-          <div class="card-game-infos">
-            <div>
-              <h2 class=""><%= booking.videogame.name %></h2>
-              <p><%= booking.start_time %></p>
-              <p><%= booking.end_time %></p>
-              </div>
-              <div>
-            </div>
-          </div>
-        </div>
-      </div>
-    <%end%>
-</div>
-
-<h2>Réservations passées</h2>
-
-<div class="cards">
-    <% @pastbookings.each do |booking| %>
-      <div class="card">
-        <div class="card-game">
-          <img class="top-img" src="<%=booking.videogame.image%>" alt="">
-          <div class="card-game-infos">
-            <div>
-              <h2 class=""><%= booking.videogame.name %></h2>
-              <p><%= booking.start_time %></p>
-              <p><%= booking.end_time %></p>
-              </div>
-              <div>
-            </div>
-          </div>
-        </div>
-      </div>
-    <%end%>
-</div>
+        <% end %>
+  </div>
