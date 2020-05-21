@@ -3,14 +3,14 @@
   <div class="cards">
     <% @videogames.each do |game| %>
       <div class="card">
-      <%= link_to videogame_path(game), :action => 'go' do%>
+      <%= link_to videogame_path(game) do%>
         <div class="card-game">
           <img class="top-img" src="<%=game.image%>" alt="">
           <div class="card-game-infos">
             <div>
-              <h2><%= game.name %></h2>
-              <p><%= game.description %></p>
-              <p><%= game.price %>$</p>
+              <h2 class="text-info"><%= game.name %></h2>
+              <p class="text-info"><%= game.description %></p>
+              <p class="text-info"><%= game.price %>$</p>
             </div>
           </div>
         <%end%>

@@ -18,13 +18,16 @@
     justify-content: space-around;
   }
 
+.card a{
+    text-decoration: none;
+}
+
 .card h2 {
     font-size: 1rem;
 }
 
 .card-game {
     box-shadow: 0 0 15px rgba(0,0,0,0.2);
-    text-decoration: none;
 }
 
 .card-game:hover {
@@ -43,7 +46,6 @@
     justify-content: space-between;
     align-items: flex-end;
     position: relative;
-    text-decoration: none;
 }
 
 .card-game h2 {
@@ -53,7 +55,7 @@
     text-overflow: ellipsis;
     white-space: nowrap !important;
     overflow: hidden;
-    width: 200px !important;
+    width: 270px !important;
 }
 
 
@@ -64,7 +66,7 @@
     text-overflow: ellipsis;
     white-space: nowrap !important;
     overflow: hidden;
-    width: 90px !important;
+    width: 230px !important;
 }
 
 .no-ellipsis p{
