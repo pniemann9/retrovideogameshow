@@ -4,12 +4,12 @@
     <% @videogames.each do |game| %>
       <div class="card">
         <div class="card-game">
-          <img class="top-img" src="<%=game.image%>" alt="">
+          <img class="top-img" src="<%=game.photo%>" alt="">
           <div class="card-game-infos">
             <div>
               <h2 class=""><%= game.name %></h2>
-              <p><%= game.description %></p>
-              <p><%= game.price %>$</p>
+              <p><%= game.genre %></p>
+              <p><%= game.price %>€</p>
               </div>
               <div>
               <p><%= link_to "Aller voir", videogame_path(game) %></p>
