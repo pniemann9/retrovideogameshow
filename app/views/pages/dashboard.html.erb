@@ -7,7 +7,12 @@
         <div class="notification">
           <img src='<%=booking.videogame.image%>' class="avatar-notification"/>
           <div class="notification-content">
-            <%= link_to "You booked #{booking.videogame.name}", videogame_path(booking.videogame.id) %>
+            <div>
+              <%= link_to "You booked #{booking.videogame.name}", videogame_path(booking.videogame.id) %>
+            </div>
+            <div id="dates">
+              <%= "Booking dates : #{booking.start_time.day}.#{booking.start_time.month}.#{booking.start_time.year} - #{booking.end_time.day}.#{booking.end_time.month}.#{booking.end_time.year}" %>
+            </div>
           </div>
         </div>
         <% end %>
