@@ -1,0 +1,40 @@
+.container-card {
+  display: flex;
+  flex-direction: row;
+  // background-color: yellow;
+  width: 100%;
+  height: calc(100vh - 150px);
+  padding: 100px 200px 100px 200px;
+}
+
+.form-card-content {
+  flex-direction: column;
+  display: flex;
+  padding: 20px;
+}
+
+.product-card {
+  display: flex;
+  // background-color: orange;
+  width: 80%;
+  height: 100%;
+  margin-right: 50px;
+  min-width: 300px;
+  max-width: 900px;
+  border-radius: 10px;
+}
+
+.form-card {
+  display: flex;
+  // background-color: pink;
+  width: 20%;
+  height: 100%;
+  min-width: 300px;
+  border-radius: 10px;
+}
+
+.card-image {
+  background-size: 100%;
+  background-position: center;
+}
+
