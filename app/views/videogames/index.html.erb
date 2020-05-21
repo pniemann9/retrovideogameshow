@@ -5,13 +5,12 @@
       <div class="card">
       <%= link_to videogame_path(game) do%>
         <div class="card-game">
-          <img class="top-img" src="<%=game.image%>" alt="">
+          <img class="top-img" src="<%=game.photo%>" alt="">
           <div class="card-game-infos">
             <div>
-              <h2 class="text-info"><%= game.name %></h2>
-              <p class="text-info"><%= game.description %></p>
-              <p class="text-info"><%= game.price %>$</p>
-              </div>
+              <h2 class=""><%= game.name %></h2>
+              <p><%= game.genre %></p>
+              <p><%= game.price %>€</p>
           </div>
         <%end%>
         </div>
