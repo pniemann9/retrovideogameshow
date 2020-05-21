@@ -5,7 +5,7 @@ class PagesController < ApplicationController
   def dashboard
     @user = current_user.id
     @userbookings = Booking.where(user_id: @user)
-    @sorted = @userbookings.sort_by {|userbooking| userbooking[:end_time]}
+    @sorted = @userbookings.sort_by { |userbooking| userbooking[:end_time] }
     @pastbookings = []
     @currentbookings = []
     @futurebookings = []
