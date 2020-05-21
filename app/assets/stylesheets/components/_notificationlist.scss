@@ -18,6 +18,8 @@
     }
 
 .notification-content {
+    display:flex;
+    justify-content: space-between;
     flex-grow: 1;
     a {
       margin: 0px;
@@ -32,4 +34,8 @@
 
 .dashboardcontainer {
   margin: 0px 200px;
+}
+
+#dates {
+  color: #5e6472
 }
