@@ -2,8 +2,12 @@ class VideogamesController < ApplicationController
     before_action :set_videogame, only: [:show, :edit, :update, :destroy]
 
     def index
-        @videogames = Videogame.all
-    end
+        if params[:query].present?
+          @videogames = Videogame.search_by_name("#{params[:query]}")
+        else
+          @videogames = Videogame.all
+        end
+    end	
 
     def show 
         @user = User.find(params[:id])
