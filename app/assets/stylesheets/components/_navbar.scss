@@ -13,7 +13,8 @@
 .navbar {
   justify-content: space-between;
   background: white;
-  height: 70px;
+  border-bottom: 1px solid #e8e8e8;
+  -webkit-box-shadow: 0 1px 5px 0 rgba(0,0,0,0.35);
 }
 
 .navbar-lewagon .navbar-collapse {
