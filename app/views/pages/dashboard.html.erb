@@ -1,0 +1,16 @@
+<div class="dashboardcontainer">
+
+<h1><%= current_user.first_name.capitalize %>'s dashboard ^-^</h1>
+
+  <div class="notifications">
+        <% @sorted.each do |booking| %>
+        <div class="notification">
+          <img src='<%=booking.videogame.image%>' class="avatar-notification"/>
+          <div class="notification-content">
+            <%= link_to "You booked #{booking.videogame.name}", videogame_path(booking.videogame.id) %>
+          </div>
+        </div>
+        <% end %>
+  </div>
+
+</div>

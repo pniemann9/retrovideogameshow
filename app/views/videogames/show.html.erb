@@ -1,20 +1,36 @@
 <div class="container-card">
-  <div class="product-card card-image", style="background-image: linear-gradient(rgba(0,0,0,0.0),
+
+  <div class="card">
+        <div class="card-game">
+          <img class="top-img" src="<%=@videogame.image%>" alt="">
+          <div class="card-game-infos">
+            <div>
+              <h2 class=""><%= @videogame.name %></h2>
+              <p><%= @videogame.description %></p>
+              <p><%= @videogame.price %>$</p>
+              </div>
+              <div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+<!--   <div class="product-card card-image", style="background-image: linear-gradient(rgba(0,0,0,0.0),
                 rgba(0,0,0,0.0)), url('<%= @videogame.image%>')">
       <div>
         <h2><%= @videogame.name %></h2>
         <p><%= @videogame.description %></p>
       </div>
-  </div>
+  </div> -->
 
   <div class="form-card">
     <div class="form-card-content">
       <h6>Je souhaite réserver ce jeu du :</h6>
         <%= simple_form_for [@videogame, Booking.new] do |f| %>
 
-        <%= f.input :start_time, as: :date %>
+        <%= f.input :start_time, as: :string, input_html:{class: "datepicker"} %>
 
-        <%= f.input :end_time, as: :date %>
+        <%= f.input :end_time, as: :string, input_html:{class: "datepicker"} %>
 
         <%= f.submit %>
       <%end%>
