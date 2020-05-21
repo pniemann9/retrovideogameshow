@@ -1,0 +1,23 @@
+<h2>Réservations en cours !</h2>
+
+  <% @currentbookings.each do |booking| %>
+  <p> <%= booking.accepted %> </p>
+  <p> <%= booking.start_time %> </p>
+  <p> <%= booking.end_time %> </p>
+ <% end %>
+
+<h2> Réservations futures !</h2>
+
+  <% @futurebookings.each do |booking| %>
+  <p> <%= booking.accepted %> </p>
+  <p> <%= booking.start_time %> </p>
+  <p> <%= booking.end_time %> </p>
+ <% end %>
+
+<h2>Réservations passées</h2>
+
+  <% @pastbookings.each do |booking| %>
+  <p> <%= booking.accepted %> </p>
+  <p> <%= booking.start_time %> </p>
+  <p> <%= booking.end_time %> </p>
+ <% end %>
