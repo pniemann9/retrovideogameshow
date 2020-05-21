@@ -1,5 +1,6 @@
 .container {
     margin: 0 auto;
+    padding-bottom: 60px;
 }
 
 .cards {
@@ -17,12 +18,20 @@
     justify-content: space-around;
   }
 
+.card a{
+    text-decoration: none;
+}
+
 .card h2 {
     font-size: 1rem;
 }
 
 .card-game {
     box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.card-game:hover {
+    box-shadow: none;
 }
 
 .top-img {
@@ -46,7 +55,7 @@
     text-overflow: ellipsis;
     white-space: nowrap !important;
     overflow: hidden;
-    width: 200px !important;
+    width: 270px !important;
 }
 
 
@@ -57,5 +66,13 @@
     text-overflow: ellipsis;
     white-space: nowrap !important;
     overflow: hidden;
-    width: 90px !important;
+    width: 230px !important;
+}
+
+.no-ellipsis p{
+    width: 100% !important;
+}
+
+.no-ellipsis h2{
+    width: 100% !important;
 }

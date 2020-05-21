@@ -5,12 +5,8 @@
 @import "bootstrap/scss/bootstrap"; // from the node_modules
 @import "font-awesome-sprockets";
 @import "font-awesome";
-
+@import "flatpickr/dist/flatpickr";
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
-
-
-// Graphical variables
-
 
