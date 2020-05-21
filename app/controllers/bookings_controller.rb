@@ -12,8 +12,8 @@ class BookingsController < ApplicationController
     @booking = Booking.new(booking_params)
     @booking.user_id = current_user.id #acces à l'id de l'user
     @booking.videogame_id = params[:videogame_id]
-    @booking.save
-    redirect_to videogame_bookings_path #ramener dans le dashboard quand on en aura un
+    # @booking.save
+    # redirect_to videogame_bookings_path #ramener dans le dashboard quand on en aura un
   end
 
   private
