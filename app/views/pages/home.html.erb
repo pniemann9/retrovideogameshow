@@ -6,13 +6,90 @@
       <p>Louer les jeux vidéos cultes de votre enfance</p>
       <button class="btn btn-gradient" ><%= link_to "Redécouvrez les jeux", videogames_path %></button>
     </div>
+
   </div>
 
 
+  <div class="search-container">
+    <div class="input-all">
+      <div class="search-input">
+        <%= form_tag videogames_path, method: :get do %>
+          <%= text_field_tag :query,
+            params[:query],
+            class: "form-control",
+            placeholder: "Find a videogame"
+          %>
+          <%= submit_tag "Search", class: "btn btn-outline-primary" %>
+        <% end %>
+      </div>
+    </div>
+  </div>
 
-<!-- ctrl bootstrap
-   -->
-<!--   <button type="button" class="btn btn-warning">Warning</button> -->
+<div class="container">
+  <h1 style="text-align: center;">Top 3 jeux rétro</h1>
+  <div class="cards">
+      <div class="card">
+        <div class="card-game">
+          <img class="top-img" src="https://d3tg06jbotvai2.cloudfront.net/game_tetiere/upload/gameimage/file/8225.jpeg" alt="">
+          <div class="card-game-infos no-ellipsis">
+            <div>
+              <h2>Final Fantasy VI</h2>
+              <p>Jeu vidéo de SquareSoft sur Super Nintendo</p>
+              <p></p>
+              </div>
+              <div>
+              <a href=""></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-game">
+          <img class="top-img" src="https://media.ouest-france.fr/v1/pictures/MjAxOTAyMTE0ZjIwYzY5MjNlMTQ4ZTU5YWQ5ODY5NmQ1ODY4ZjM?width=480&height=270&focuspoint=50%2C25&cropresize=1&client_id=bpeditorial&sign=5b980755fb2ab9a9c297e2ec80a79b70b1cfb0197fc37153a905710287d3708f" alt="">
+          <div class="card-game-infos no-ellipsis">
+            <div>
+              <h2>Super Mario Bros. (1985)</h2>
+              <p>Jeu vidéo de Nintendo sur NES</p>
+              <p></p>
+              </div>
+              <div>
+              <a href=""></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-game">
+          <img class="top-img" src="https://media.senscritique.com/media/000017818099/source_big/Super_Mario_World.png" alt="">
+          <div class="card-game-infos no-ellipsis">
+            <div>
+              <h2>Super Mario World (1990)</h2>
+              <p>Jeu vidéo de Nintendo sur Super Nintendo</p>
+              <p></p>
+              </div>
+              <div>
+              <a href=""></a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

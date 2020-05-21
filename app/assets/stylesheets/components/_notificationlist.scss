@@ -1,0 +1,41 @@
+.notifications {
+  display: block;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+
+.notification {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 8px 8px;
+    border-bottom: 1px solid rgb(235,235,235);
+    height: 60px;
+    margin: 2px 0px;
+    }
+
+.notification:hover {
+      box-shadow: 0 2px 2px rgba(0.3,0.3,0.3,0.3);
+    }
+
+.notification-content {
+    display:flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    a {
+      margin: 0px;
+      margin-left: 10px;
+      text-decoration: none;
+      color: black;
+    }
+    a:hover {
+      color: #5e6472;
+    }
+}
+
+.dashboardcontainer {
+  margin: 0px 200px;
+}
+
+#dates {
+  color: #5e6472
+}

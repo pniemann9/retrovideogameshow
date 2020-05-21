@@ -3,9 +3,13 @@
     <%= image_tag "https://res.cloudinary.com/dc1jk4jut/image/upload/v1590004728/pngguru.com_rcgtax.png" %>
   <% end %>
 
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
+  <spans>Retro Game Show</spans>
+  </div>
+
 
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -18,7 +22,7 @@
   <% end %>
       </li>
       <li class="nav-item">
-        <%= link_to "Messages", "#", class: "nav-link" %>
+        <%= link_to "Dashboard", dashboard_path, class: "nav-link" %>
       </li>
       <li class="nav-item dropdown">
         <%= image_tag "https://res.cloudinary.com/dc1jk4jut/image/upload/v1590005469/yoshi_avatar_d6rtkq.png", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
