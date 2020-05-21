@@ -1,5 +1,6 @@
 .container {
     margin: 0 auto;
+    padding-bottom: 60px;
 }
 
 .cards {
@@ -24,6 +25,10 @@
 .card-game {
     box-shadow: 0 0 15px rgba(0,0,0,0.2);
     text-decoration: none;
+}
+
+.card-game:hover {
+    box-shadow: none;
 }
 
 .top-img {
@@ -60,4 +65,12 @@
     white-space: nowrap !important;
     overflow: hidden;
     width: 90px !important;
+}
+
+.no-ellipsis p{
+    width: 100% !important;
+}
+
+.no-ellipsis h2{
+    width: 100% !important;
 }
