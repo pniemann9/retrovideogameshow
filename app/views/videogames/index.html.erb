@@ -1,20 +1,20 @@
 <div class="container">
   <h1>Les Jeux</h1>
-  <div class="cards">
-    <% @videogames.each do |game| %>
-      <div class="card">
-      <%= link_to videogame_path(game) do%>
-        <div class="card-game">
-          <img class="top-img" src="<%=game.photo%>" alt="">
-          <div class="card-game-infos">
-            <div>
-              <h2 class=""><%= game.name %></h2>
-              <p><%= game.genre %></p>
-              <p><%= game.price %>€</p>
-          </div>
-        <%end%>
+    <div class="cards">
+      <% @videogames.each do |game| %>
+        <div class="card">
+          <%= link_to videogame_path(game) do%>
+            <div class="card-game">
+              <img class="top-img" src="<%=game.photo%>" alt="">
+              <div class="card-game-infos">
+                <h2 class=""><%= game.name %></h2>
+                <p><%= game.genre %></p>
+                <p><%= game.price %>€</p>
+              </div>
+            </div>
+          <% end %>
         </div>
-      </div>
-    <%end%>
-  </div>
+      <%end%>
+    </div>
 </div>
+

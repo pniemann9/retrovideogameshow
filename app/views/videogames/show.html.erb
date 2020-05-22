@@ -1,39 +1,24 @@
 <div class="container-form">
+  <div class="title">
+     <h3 class=""><%= @videogame.name %> (<%= @videogame.description %>)</h3>
+  </div>
 
-  <div class="card">
-        <div class="card-game">
-          <img class="top-img" src="<%=@videogame.image%>" alt="">
-          <div class="card-game-infos">
-            <div>
-              <h2 class=""><%= @videogame.name %></h2>
-              <p><%= @videogame.description %></p>
-              <p><%= @videogame.price %>$</p>
-              </div>
-              <div>
-            </div>
-          </div>
-        </div>
-      </div>
+  <div class="body">
+    <div class="card-img">
+      <img src="<%=@videogame.image%>" alt="">
+    </div>
 
-<!--   <div class="product-card card-image", style="background-image: linear-gradient(rgba(0,0,0,0.0),
-                rgba(0,0,0,0.0)), url('<%= @videogame.image%>')">
-      <div>
-        <h2><%= @videogame.name %></h2>
-        <p><%= @videogame.description %></p>
-      </div>
-  </div> -->
-
-  <div class="form-card">
-    <div class="form-card-content">
-      <h2>Réservation</h2>
-       <div class="simple_form form-row" style="width: 300px; margin: 0 auto;">
-        <h6>Je souhaite réserver ce jeu du :</h6>
+    <div class="form-card">
+      <div class="form-card-content">
+        <h3>Réservation du jeu</h3>
+        <div class="simple_form form-row">
           <%= simple_form_for [@videogame, Booking.new] do |f| %>
-          <%= f.input :start_time, as: :string, input_html:{id: "range_start"} %>
-          <%= f.input :end_time, as: :string, input_html:{id: "range_end"} %>
-          <%= f.button :submit, "Réservez", class:"btn-primary" %>
+          <%= f.input :start_time, label: 'Date de début', as: :string, input_html:{id: "range_start"} %>
+          <%= f.input :end_time, label: 'Date de fin',as: :string, input_html:{id: "range_end"} %>
+          <%= f.button :submit, "Réservez - #{@videogame.price}€", class:"btn-primary" %>
         <%end%>
-       </div>
+      </div>
     </div>
   </div>
 </div>
+
