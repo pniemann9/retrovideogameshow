@@ -10,7 +10,6 @@ require("channels")
 
 import "bootstrap";
 import "../plugins/flatpickr";
-import "../plugins/eventlistenerbooking";
 
 
 
