@@ -7,9 +7,9 @@ class VideogamesController < ApplicationController
         else
           @videogames = Videogame.all
         end
-    end	
+    end
 
-    def show 
+    def show
         @user = User.find(params[:id])
     end
 
@@ -26,7 +26,7 @@ class VideogamesController < ApplicationController
 
     def update
         @videogame.update(videogame_params)
-        redirect_to videogames_path
+        redirect_to videogames_booking_path(@booking)
     end
 
     def destroy
