@@ -1,7 +1,9 @@
 <div class="container">
-     <div class="btn btn-ghost" >
-      <%= link_to " < Retour", videogames_path  %>
-    </div>
+    <%= link_to videogames_path  do %>
+      <div class="btn btn-ghost" >
+        <p>< Retour</p>
+      </div>
+    <%end%>
   <div class="title">
      <h3 class=""><%= @videogame.name %></h3>
   </div>
