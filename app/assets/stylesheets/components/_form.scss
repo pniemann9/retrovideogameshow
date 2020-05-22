@@ -1,37 +1,48 @@
-.container-form {
+.container {
   height: 500px;
-  padding: 100px 200px 100px 200px;
+  //padding: 100px 200px 100px 200px;
 }
 
-.container-form > .title {
+.container > .title {
   margin-bottom: 20px;
 }
 
-.container-form .simple_form {
+.container .simple_form {
   width: 100%;
   text-align: center;
+  margin-top: 15px;
 }
 
-.container-form .simple_form div.input {
+.container .simple_form div.input {
   text-align: left;
 }
 
-.container-form > .body {
+.container > .body {
   display: flex;
   flex-direction: row;
 }
 
-.container-form > .body > .card-img {
+.container > .body > .card-img {
   width: 100%;
   max-width: 600px;
 }
 
-.container-form > .body > .card-img img {
+.container > .body > .card-img img {
   -webkit-box-shadow: 5px 5px 24px -7px #000000;
   box-shadow: 5px 5px 24px -7px #000000;
   width: 100%;
   object-fit: cover;
   border-radius: 10px;
+  object-fit: fill;
+  border-radius: 10px;
+  max-height: 350px;
+}
+
+.form-center {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .form-card {
@@ -47,6 +58,7 @@
     border-radius: 0.25rem;
   margin-left: 30px;
   padding: 20px;
+  height: 350px;
 }
 
 .form-card-content {
@@ -55,5 +67,5 @@
 
 
 .form-card-content input.btn {
-  margin-top: 10px;
+  margin-top: 50px;
 }
