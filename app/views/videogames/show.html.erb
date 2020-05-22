@@ -1,4 +1,7 @@
-<div class="container-form">
+<div class="container">
+     <div class="btn btn-ghost" >
+      <%= link_to " < Retour", videogames_path  %>
+    </div>
   <div class="title">
      <h3 class=""><%= @videogame.name %></h3>
   </div>
@@ -8,17 +11,20 @@
       <img src="<%= @videogame.photo %>" alt="">
     </div>
 
-    <div class="form-card">
+<div class="form-center">
+  <div class="form-card">
       <div class="form-card-content">
         <h3>Réservation du jeu</h3>
         <div class="simple_form form-row">
           <%= simple_form_for [@videogame, Booking.new] do |f| %>
           <%= f.input :start_time, label: 'Date de début', as: :string, input_html:{id: "range_start"} %>
           <%= f.input :end_time, label: 'Date de fin',as: :string, input_html:{id: "range_end"} %>
-          <%= f.button :submit, "Réservez - #{@videogame.price}€", class:"btn-primary" %>
+          <%= f.button :submit, "Réservez - #{@videogame.price}€ / semaine", class:"btn-primary" %>
         <%end%>
       </div>
     </div>
   </div>
+</div>
+
 </div>
 </div>
