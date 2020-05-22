@@ -8,7 +8,9 @@ require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
 
-import "../plugins/flatpickr"
+import "bootstrap";
+import "../plugins/flatpickr";
+import "../plugins/eventlistenerbooking";
 
 
 
