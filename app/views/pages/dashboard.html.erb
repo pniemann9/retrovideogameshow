@@ -1,17 +1,17 @@
 <div class="dashboardcontainer">
 
-<h1><%= current_user.first_name.capitalize %>'s dashboard ^-^</h1>
+<h1>Dashboard de <%= current_user.first_name.capitalize %> ^-^</h1>
 
-  <div class="notifications">
+  <div class="notifications mt-5">
         <% @sorted.each do |booking| %>
         <div class="notification">
           <img src='<%=booking.videogame.photo%>' class="avatar-notification"/>
           <div class="notification-content">
             <div>
-              <%= link_to "You booked #{booking.videogame.name}", videogame_path(booking.videogame.id) %>
+              <%= link_to "Vous avez réservé #{booking.videogame.name}", videogame_path(booking.videogame.id) %>
             </div>
             <div id="dates">
-              <%= "Booking dates : #{booking.start_time.day}.#{booking.start_time.month}.#{booking.start_time.year} - #{booking.end_time.day}.#{booking.end_time.month}.#{booking.end_time.year}" %>
+              <%= "Dates de réservation : #{booking.start_time.day}.#{booking.start_time.month}.#{booking.start_time.year} - #{booking.end_time.day}.#{booking.end_time.month}.#{booking.end_time.year}" %>
             </div>
           </div>
         </div>
