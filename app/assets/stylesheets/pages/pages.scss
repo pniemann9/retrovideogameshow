@@ -12,6 +12,11 @@ body {
   background: #f8f8f8;
 }
 
-  .content-wrapper {
+.content-wrapper {
   min-height: calc(100vh - 70px - 80px - 58px);
+}
+
+
+#indexbutton > a {
+  text-decoration: none;
 }
