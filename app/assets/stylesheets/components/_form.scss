@@ -20,6 +20,14 @@
 .container > .body {
   display: flex;
   flex-direction: row;
+    align-items: center;
+  justify-content: center;
+}
+
+.container .form-sucess {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .container > .body > .card-img {
