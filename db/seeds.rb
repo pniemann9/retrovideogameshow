@@ -148,6 +148,8 @@ games = [
 
 user = User.create(email:"gamer@gmail.com", password:"A12345", first_name: "yoshi", last_name:"nintendo", address:"nintendoland", phone_number:"01234567", avatar:"http://www.pngall.com/wp-content/uploads/2/Video-Game-PNG-Pic.png")
 user.save!
+user2 = User.create(email:"gamers@gmail.com", password:"A12345", first_name: "yoshi", last_name:"nintendo", address:"nintendoland", phone_number:"01234567", avatar:"http://www.pngall.com/wp-content/uploads/2/Video-Game-PNG-Pic.png")
+user2.save!
 puts user
 games.each do |game|
 
