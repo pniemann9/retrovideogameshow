@@ -10,7 +10,7 @@
           <p>Vous avez réservé <strong><%=@booking.videogame.name%></strong></p>
           <p><em>Du <%= "#{@booking.start_time.day}.#{@booking.start_time.month}.#{@booking.start_time.year} au #{@booking.end_time.day}.#{@booking.end_time.month}.#{@booking.end_time.year}" %></em></p>
         </div>
-        <div class="card-img">
+        <div class="card-img body">
           <img src="<%= @booking.videogame.photo %>" alt="">
         </div>
   </div>
